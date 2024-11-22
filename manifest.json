@@ -5,6 +5,6 @@
   "version": "0.0",
   "action": {
     "default_popup": "celery.html",
-    "default_icon": "CSV Reader Logo"
+    "default_icon": "img/celeryLogo.png"
   }
 }
