@@ -44,17 +44,12 @@ public class Assignment {
     }
     //toString
     public String toString() {
-        String outputString = String.format("%32s\n%32s\n", this.course, this.name);
+        String outputString = String.format("%32s,%32s,", this.name, this.getCourse);
         
         // Add Category, CategoryWeight and points
-        outputString += String.format("%32s \n", this.category);
-        outputString += String.format("%3.3f %% \n", this.categoryWeight); // Show Category Weight as a percent
-        outputString += String.format("%d \n", this.points);
-    }
-    //toCSV()
-    //Outputs this to a new row in a csv file
-    public void toCSV(String filepath) {
-        // I don't know how to read/write to csv in Java. Research is required.
+        outputString += String.format("%32s,", this.category);
+        outputString += String.format("%3.3f,", this.categoryWeight); // Show Category Weight as a percent
+        outputString += String.format("%d", this.points);
     }
 
     //Getter Functions
